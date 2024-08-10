@@ -22,7 +22,7 @@ function fetchMovies() {
             return response.json();
         })
         .then(data => {
-            console.log(data);  // Log the data to the console
+            console.log(data);  
             if (data.results) {
                 displayMovies(data.results);
             } else {
